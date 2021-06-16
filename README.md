@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screencapture-fylo-dark-theme-landing-page-blush-vercel-app-2021-06-15-21_17_12](https://user-images.githubusercontent.com/36529826/122147870-5593f500-ce1f-11eb-9772-52769412a90a.png)
 
 ### Links
 
