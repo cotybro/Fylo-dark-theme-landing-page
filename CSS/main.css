@@ -1,0 +1,601 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+/* CSS Document */
+body {
+	background:  hsl(217, 28%, 15%);
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: .875rem;
+	font-family: "Open Sans", sans-serif;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.max-width {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/*
+==========Typograpghy==========
+*/
+
+h1,
+h2,
+h3,
+a {
+	font-family: "Raleway", serif;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.link {
+	font-size: 1rem
+}
+
+.link:hover,
+.link:focus {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.hero-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+.hero-text {
+	font-size: 1.25rem;
+	line-height: 30px;
+}
+
+.features-title {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.features-text {
+	line-height: 21px;
+}
+
+.benefits-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+.benefits-text {
+	font-size: 1rem;
+	line-height: 24px;
+}
+
+.fylo-works {
+	font-size: 1rem;
+	color: rgba(98, 224, 217, 1);
+}
+
+.fylo-works:hover,
+.fylo-works:focus {
+	color: #fff;
+}
+
+.fylo-works:hover .icon-arrow,
+.fylo-works:focus .icon-arrow{
+	filter: invert(100%) sepia(95%) saturate(13%) hue-rotate(216deg) brightness(104%) contrast(100%);
+}
+
+.border-under {
+	border-bottom: 1px solid rgba(98, 224, 217, 1);
+	max-width: 166px;
+}
+
+.border-under:hover,
+.border-under:focus {
+	border-bottom: 1px solid white;
+}
+
+.reviews-text {
+	line-height: 21px;
+	letter-spacing: 0.5px;
+}
+
+.reviewer-name {
+	font-size: .625rem;
+	font-weight: 700;
+	letter-spacing: .5px;
+}
+
+.reviewer-job {
+	font-size: .5rem;
+	letter-spacing: 0.571429px;
+}
+
+.early-access-title {
+	font-size: 2rem;	
+}
+
+.early-access-text {
+	font-size: .875rem;
+	line-height: 21px;
+}
+
+#email {
+	font-size: .75rem;
+	color: rgba(7, 4, 59, 1);
+	padding: 1rem;
+	border: none;
+	border-radius: 24px;
+	box-shadow: 2px 3px 6px 0px rgba(7, 4, 59, 0.16);
+}
+
+#email::placeholder {
+	color: rgba(192, 192, 192, 1);
+}
+
+#submit {
+	font-size: .75rem;
+	border: none;
+	color: #fff;
+	padding: .9375rem 1.625rem;
+	background: linear-gradient(129.57deg, #63E1D9 -26.63%, #34A0CD 100%);
+	box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+	border-radius: 24px;
+}
+
+#submit:hover,
+#submit:focus {
+	background: rgba(138, 218, 227, 1);
+	cursor: pointer;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 700;
+	border-radius: 28px;
+}
+
+.btn-primary {
+	padding: 1.1875rem 5.9375rem;
+	background: linear-gradient(to bottom, rgba(99, 225, 217, 1) -49.34%, rgba(52, 160, 205, 1) 100%);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background: rgba(138, 218, 227, 1);
+}
+
+.footer-text {
+	font-size: 1rem;
+	line-height: 24px;
+}
+
+.footer-phone,
+.footer-email {
+	font-size: .875rem;
+}
+
+.social-wrapper {
+	width: 15px;
+	border: 1px solid white;
+	padding: 8px;
+	border-radius: 50%;
+	margin-left: .75rem;
+}
+
+.social-wrapper:hover,
+.social-link:focus {
+	filter: invert(77%) sepia(56%) saturate(375%) hue-rotate(122deg) brightness(225%) contrast(300%);
+}
+
+/*
+==========Layout==========
+*/
+
+main {
+	background: rgba(24,31,43, 1);
+}
+
+.flex-container {
+	display: flex;
+	align-items: flex-start;
+}
+
+/*=====Header=====*/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: 4.5625rem;
+	margin-bottom: 4.6875rem;
+}
+
+.header-nav {
+	display: flex;
+}
+
+.header-nav .link {
+	margin-left: 3.5625rem;
+}
+
+/*=====Hero=====*/
+
+.hero {
+	background-image: url("../images/bg-curvy-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100%;
+}
+
+.hero-container {
+	max-width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hero-img {
+	margin: 0 auto;
+	margin-bottom: 2.25rem;
+}
+
+.hero-title,
+.hero-text {
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	max-width: 800px;
+}
+
+.btn-primary {
+	margin-bottom: 9.875rem;
+}
+
+/*=====Features=====*/
+
+.flex-container {
+	justify-content: space-between;
+}
+
+.features {
+	max-width: 55rem;
+	margin: 0 auto;
+	margin-bottom: 8.585625rem;
+	text-align: center;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.col-features {
+	max-width: 40%;
+	margin-bottom: 4.875rem;
+}
+
+.features-img {
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+
+.features-title {
+	margin-bottom: .5625rem;
+}
+
+/*=====Benefits=====*/
+
+.benefits {
+	max-width: 85%;
+	margin: 0 auto;
+	margin-bottom: 12rem;
+}
+
+.col-benefits {
+	min-width: 200px;
+	padding-left: 1.5rem;
+}
+
+.benefits-title {
+	margin-bottom: 1.1875rem;
+}
+
+.benefits-text {
+	margin-bottom: 1rem;
+}
+
+.icon-arrow {
+	float: right;
+}
+
+.bot-marg {
+	margin-bottom: 1.5rem;
+}
+
+.col-benefits {
+	max-width: 40%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+/*=====Reviews=====*/
+
+.reviews {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.col-reviews {
+	flex-basis: 26%;
+	background: rgba(32, 42, 60, 1);
+	box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+	border-radius: 3.93258px;
+	padding: 2.5rem 1.625rem 1.625rem;
+	margin-right: .5rem;
+	position: relative;
+	z-index: 2;
+}
+
+.reviews-text {
+	margin-bottom: 1.5rem;
+}
+
+.reviewer-container {
+	display: flex;
+	align-items: center;
+}
+
+.reviewer-img {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-right: .5rem;
+}
+
+.reviewer-name {
+	margin-bottom: .25rem;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.quotes-img {
+	position: absolute;
+	left: -9px;
+	top: -34px;
+	z-index: 1;
+}
+
+
+
+/*=====Early Access=====*/
+
+.early-access {
+	max-width: 55%;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(27, 35, 48, 1);
+	box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 9px;
+	position: relative;
+	z-index: 1;
+	top: 100px;
+}
+
+.early-access-container {
+	padding: 2.625rem 4.8125rem;
+}
+
+.early-access-title {
+	margin-bottom: 1rem;
+}
+
+.early-access-text {
+	margin-bottom: 2.375rem;
+}
+
+#email {
+	margin-right: 1.8125rem;
+	width: 63%;
+}
+
+/*=====Footer=====*/
+
+footer {
+	background: rgba(11, 21, 36, 1);
+/*	padding: 9.9375rem 0 3.3125rem 0;*/
+	height: 441px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-start;
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+}
+
+.footer-flex {
+	display: flex;
+	align-items: center;
+	margin: auto 0;
+}
+
+.as-c {
+	align-self: center;
+}
+
+.footer-col {
+	max-width: 30%;
+}
+
+.footer-col li {
+	margin-bottom: 1rem;
+}
+
+.footer-logo {
+	width: 108px;
+	margin-bottom: auto;
+	position: relative;
+	bottom: 50px;
+}
+
+.location-img {
+	margin-right: 1rem;
+	margin-bottom: auto;
+}
+
+.footer-phone-img {
+	margin-bottom: 1rem;
+}
+
+.footer-phone {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+
+.footer-email {
+	margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+	.header-nav .link {
+		margin-left: 1.5rem;
+		font-size: .75rem;
+}
+	
+	.hero-container {
+		max-width: 90%;
+	}
+	
+	.hero-title {
+		font-size: 1.5rem;
+	}
+	.hero-text {
+		font-size: .875rem;
+	}
+	
+	.btn-primary {
+		font-size: .875rem;
+	}
+	
+	.flex-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.features {
+		margin-bottom: 10rem;
+	}
+	
+	.features-img {
+		margin-bottom: 1.5rem;
+	}
+	
+	.features-title {
+		font-size: 1.125rem
+	}
+	
+	.features-text {
+		font-size: .875rem;
+	}
+	
+	.col-features {
+		max-width: 90%;
+	}
+	
+	.col-benefits {
+		max-width: 90%;
+		margin-top: 3rem;
+	}
+	
+	.reviews {
+		max-width: 80%;
+	}
+	
+	.col-reviews{
+		margin-bottom: 1rem;
+	}
+		
+	.early-access {
+		max-width: 90%;
+	}
+	
+	.early-access-title {
+		font-size: 1.5rem;
+	}
+	
+	.early-access-text {
+		font-size: .875rem;
+	}
+
+	#email {
+		margin-right: 0;
+		width: 90%;
+		margin-bottom: 1rem;
+	}
+	
+	#submit {
+		width: 100%;
+	}
+	
+	footer {
+		height: 974px;
+	}
+	
+	.footer-container {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.as-c {
+		align-self: flex-start;
+	}
+	
+	.footer-col {
+		margin-bottom: 1.5rem;
+		max-width: 90%
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
